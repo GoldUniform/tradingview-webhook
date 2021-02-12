@@ -3,15 +3,9 @@ from chalice import Chalice
 
 app = Chalice(app_name='tradingview-webhook')
 
-# PAPER KEYS
-API_KEY = 'PKIQYUB9B73K0DIKAXHM'
-SECRET_KEY = 'uEk5A4Z7hZMrUNcACrhWXyeSs1EPUtKhXOe793kC'
-BASE_URL = "https://paper-api.alpaca.markets"
-
-# THE REAL STUFF
-# API_KEY = 'AKFAEM1PPJHBUPR3XDQD'
-# SECRET_KEY = 'kygbCp4lnkvGYANTASotvoPwj0RSuwWW8RMoZDhU'
-# BASE_URL = "https://api.alpaca.markets"
+API_KEY = config.API_KEY
+SECRET_KEY = config.SECRET_KEY
+BASE_URL = config.BASE_URL
 
 ORDERS_URL = "{}/v2/orders".format(BASE_URL)
 ACCOUNT_URL = "{}/v2/account".format(BASE_URL)
