@@ -2,4 +2,4 @@
 .chalice/venv/
 config.py
 __pycache__
-.chalice
+.chalice/
