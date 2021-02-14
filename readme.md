@@ -4,7 +4,7 @@ Webhook endpoint for TradingView alerts.
 
 ## Getting Started
 
-This project contains a Chalice based webhook that accepts TradingView alerts with a JSON payload. The webhook executes a bracket order taking loss at 2% and profit at 4%.
+This project contains a Chalice based webhook that accepts TradingView alerts with a JSON payload. The webhook executes a bracket order of 5% equity, taking loss at 2% and profit at 4%.
 
 ### Prerequisites
 
